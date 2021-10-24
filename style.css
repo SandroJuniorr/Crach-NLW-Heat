@@ -20,7 +20,6 @@ body{
     position: absolute;
     display: none;
 }
-
 main{
     background: url(./assets/Mobile.png) no-repeat center/cover ;
     width: 100vw;
@@ -41,7 +40,7 @@ main{
     background: url(./assets/faixa.png) no-repeat ;
     position: absolute;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     display: none;
     
 }
@@ -102,6 +101,7 @@ ul{
         width: 358px;
         height: 540px;
         min-height: 540px;
+        z-index: 1;
     }
     
     .avatar{
@@ -111,3 +111,15 @@ ul{
     }
     
 }
+@media only screen and (max-height:685px){
+    main{
+        margin-top: 145px;
+    }
+}
+ @media only screen and (min-height:685px){
+    main{
+        margin-top: 138px;
+        margin-bottom: 440px;
+    }
+}  
+ 

@@ -3,7 +3,7 @@
 }
 html,body{
     --black:#202024;
-
+    --grey:#E1E1E6; 
     height: 100%;
 }
 body{

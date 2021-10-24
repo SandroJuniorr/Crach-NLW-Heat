@@ -28,3 +28,20 @@ function getGitHubProfileInfos(){
     })
 }
 getGitHubProfileInfos()
+putEventLI()
+function putEventLI() {
+  for (let li of socialLinks.children){
+  li.addEventListener("mouseover", ()=>{
+    let social = li.getAttribute("class")
+    li.children[0].children[0].src = `assets/${social}-hover.png`
+  })
+  li.addEventListener("mouseout", ()=>{
+    let social = li.getAttribute("class")
+    li.children[0].children[0].src = `assets/${social}.svg`
+  })
+  }
+
+};
+
+
+
